@@ -1,0 +1,18 @@
+flowchart LR
+user["User"]
+product["Product"]
+category["Category"]
+order["Order"]
+order_item["OrderItem"]
+payment["Payment"]
+cart["Cart"]
+cart_item["CartItem"]
+user -->|1:N| order
+user -->|1:1| cart
+cart -->|1:N| cart_item
+product -->|1:N| cart_item
+order -->|1:N| order_item
+product -->|1:N| order_item
+category -->|1:N| product
+category -->|self-ref| category
+order -->|1:1| payment

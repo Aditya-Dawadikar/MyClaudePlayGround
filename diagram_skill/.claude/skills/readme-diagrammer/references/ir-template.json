@@ -1,0 +1,49 @@
+{
+  "title": "Architecture",
+  "diagram_type": "flowchart",
+  "nodes": [
+    {
+      "id": "client",
+      "label": "Client"
+    },
+    {
+      "id": "gateway",
+      "label": "API Gateway"
+    },
+    {
+      "id": "service",
+      "label": "Backend Service"
+    }
+  ],
+  "edges": [
+    {
+      "from": "client",
+      "to": "gateway",
+      "label": "Request"
+    },
+    {
+      "from": "gateway",
+      "to": "service",
+      "label": "Forward"
+    }
+  ],
+  "groups": [
+    {
+      "name": "Frontend",
+      "members": [
+        "client"
+      ]
+    },
+    {
+      "name": "Backend",
+      "members": [
+        "gateway",
+        "service"
+      ]
+    }
+  ],
+  "notes": [
+    "Do not add nodes or edges that are not supported by the selected text.",
+    "If the section exceeds about 12 nodes, split the result into multiple diagrams."
+  ]
+}
