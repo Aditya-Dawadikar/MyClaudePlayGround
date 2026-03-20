@@ -6,7 +6,7 @@ It is used as a working space to create, test, and maintain reusable skills that
 
 ## Available Skills
 
-- [readme-diagrammer](diagram_skill/README.md)
+- [readme-diagrammer](readme_diagrammer/README.md)
 	- Generates an Architecture diagram from a Markdown file and embeds a rendered PNG into the same document. 
 
 ## Coming Soon
